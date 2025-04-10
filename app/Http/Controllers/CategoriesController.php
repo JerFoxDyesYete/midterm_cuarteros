@@ -48,7 +48,8 @@ class CategoriesController extends Controller
             'description' => 'required|max:255'
         ]);
 
-        return $categories->update($validated);
+        $categories->update($validated);
+        return $validated;
     }
 
     /**
