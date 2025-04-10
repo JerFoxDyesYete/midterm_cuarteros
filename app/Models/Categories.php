@@ -13,4 +13,11 @@ class Categories extends Model
     protected $fillable = [
         'name', 'description'
     ];
+
+    protected function casts(): array
+    {
+        return [
+            'name' => 'string'
+        ];
+    }
 }

@@ -15,4 +15,12 @@ class Product extends Model
         'price',
         'quantity'
     ];
+
+    protected function casts(): array
+    {
+        return [
+            'price' => 'float',
+            'quantity' => 'integer'
+        ];
+    }
 }
